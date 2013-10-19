@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+         <title>Truesoft - Quem somos</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="js/bootstrap.min.js" rel="javascript">
+        <style>
+          body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+          }
+          /* CUSTOMIZE THE CAROUSEL
+        -------------------------------------------------- */
+
+        /* Carousel base class */
+        .carousel {
+          margin-bottom: 60px;
+        }
+
+        .carousel .container {
+          position: relative;
+          z-index: 9;
+        }
+
+        .carousel-control {
+          height: 80px;
+          margin-top: 0;
+          font-size: 120px;
+          text-shadow: 0 1px 1px rgba(0,0,0,.4);
+          background-color: transparent;
+          border: 0;
+          z-index: 10;
+        }
+
+        .carousel .item {
+          height: 400px;
+        }
+        .carousel img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-width: 100%;
+        }
+
+        .carousel-caption {
+          
+          position: static;
+          max-width: 550px;
+          padding: 0 20px;
+          margin-top: 200px;
+        }
+        .carousel-caption h1,
+        .carousel-caption .lead {
+          margin: 0;
+          line-height: 1.25;
+          color: #fff;
+          text-shadow: 0 1px 1px rgba(0,0,0,.4);
+        }
+        .carousel-caption .btn {
+          margin-top: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="brand" href="#"><img src="images/logoMin.png"></a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li class="dropdown">
+                        <a href="#"  class="dropdown-toggle" data-toggle="dropdown">Projetos<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="spica.html">Spica Episódio 0</a></li>
+                            <li><a href="happypivot.html">Happy Pivot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="hero-unit">
+                <center>
+                <img src = "images/logoSpica.png" height = "60%" width="60%">
+                </center>
+                <p>
+                    <br>
+                    Spica Episódio 0, é nosso primeiro projeto. Iniciou-se como TCC do curso Técnico em Informática da ETEC de Poá, é um projeto de código aberto,
+                    com o código-fonte sob licença GPL e trabalho artistico sob licença Creative Commons. É um adventure 2.5D desenvolvido com Unity3D.
+                    <br>
+                </p>
+                         
+            </div>
+            <div class="row">
+                <div class = "span5">
+                    <center><h1>Sinopse</h1></center>
+                    <p align="justify">
+                        Há muito tempo existiu um período chamado “Era Mitológica”, nesta época a Terra e um mundo metafísico chamado Spica estavam conectados, devido a constantes conflitos entre os seres de ambos os mundos, fez-se necessária a criação de uma barreira entre as duas realidades.
+                        <br>Em Spica Episódio 0  nos é contada a história  do lendário Fairy Hunter Chuck e sua luta contra uma nova ameaça.
+                    </p>
+                </div>
+                <div class="span1">
+                </div>
+                <div class="span6">
+                    <center><h1>Imagens</h1></center>
+                     <div id="myCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/spsc1.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/spsc2.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/spsc3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/spsc4.png" alt="">
+                            </div>   
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    </div><!-- /.carousel -->
+                </div>
+            </div>
+
+            <footer>
+                <p align="right">&copy; Truesoft 2013</p>
+            </footer>
+        </div> <!-- /container -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap-carousel.js"></script>
+         <script src="js/dropdown.js"></script>
+        <script>
+          !function ($) {
+            $(function(){
+              // carousel demo
+              $('#myCarousel').carousel()
+              $('.dropdown-toggle').dropdown()
+            })
+          }(window.jQuery)
+        </script>
+    </body>
+
+</html>

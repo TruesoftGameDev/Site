@@ -2,7 +2,7 @@
 <meta charset="UTF-8">
 <html>
     <head>
-         <title>Truesoft GameDev</title>
+         <title>Truesoft - Quem somos</title>
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -13,7 +13,7 @@
         </style>
     </head>
     <body>
-        <div class="navbar navbar-inverse navbar-fixed-top">
+         <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="navbar-inner">
             <div class="container">
               <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -21,13 +21,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="brand" href="#"><img src="images/logoMin.png"></a>
+              <a class="brand" href="index.html"><img src="images/logoMin.png"></a>
               <div class="nav-collapse collapse">
                 <ul class="nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#about">Sobre nós</a></li>
-                  <li><a href="#contact">Contato</a></li>
-                </ul> 
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li class="dropdown">
+                        <a href="#"  class="dropdown-toggle" data-toggle="dropdown">Projetos<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="spica.html">Spica Episódio 0</a></li>
+                            <li><a href="happypivot.html">Happy Pivot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
               </div><!--/.nav-collapse -->
             </div>
           </div>
@@ -51,7 +58,7 @@
 
                 </p>
                          
-                <p align="right"><a href="#" class="btn btn-primary btn-large" >Conheça nossos projetos &raquo;</a></p>
+                <p align="right"><a href="projetos.html" class="btn btn-primary btn-large" >Conheça nossos projetos &raquo;</a></p>
             </div>
             <center><h1>Membros</h1></center>
             <div class="row">
@@ -157,6 +164,19 @@
 
 
         </div> <!-- /container -->
+        <script src="js/jquery.js"></script>
+        <script src="js/dropdown.js"></script>
+
+        <script>
+          !function ($) {
+            $(function(){
+              // carousel demo
+              $('.dropdown-toggle').dropdown()
+
+            })
+          }(window.jQuery)
+        </script>
     </body>
+
 
 </html>
